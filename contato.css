@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.heading {
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact {
+    padding: 100px 10%;
+    background:#031540;
+    color: #fff;
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    position: relative;
+    width: 48%;
+}
+
+.input-field input,
+.textarea-field textarea {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 16px;
+}
+
+.input-field input:focus,
+.textarea-field textarea:focus {
+    outline: none;
+}
+
+.input-field .focus {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #00abf0;
+    transition: 0.5s;
+}
+
+.input-field input:focus ~ .focus,
+.input-field input:valid ~ .focus {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.textarea-field textarea {
+    resize: none;
+}
+
+.btn-box {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 35px;
+    background: #00abf0;
+    border-radius: 40px;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #00abf0;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
