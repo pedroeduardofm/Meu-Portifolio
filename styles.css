@@ -151,3 +151,23 @@
 .btn:hover {
     box-shadow: none;
 }
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        margin-top: 10px;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content {
+        margin-top: 20px;
+    }
+}
