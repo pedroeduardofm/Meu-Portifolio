@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.logo{
+.logo {
     font-size: 25px;
     color: #00abf0;
     text-decoration: none;
@@ -27,7 +27,12 @@
     z-index: 100;
 }
 
-.navbar a{
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar a {
     font-size: 18px;
     color: #ffffff;
     text-decoration: none;
@@ -37,33 +42,31 @@
 }
 
 .navbar a:hover,
-.navbar a.active{
-    color:#00abf0 
+.navbar a.active {
+    color: #00abf0;
 }
 
-
 .home {
-    height: 100vh;
-    background: linear-gradient(-90deg, #031540 65%, #fff 35%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-90deg, #031540 65%, #fff 35%);
 }
 
 .home-content {
     color: #031540;
-    text-align: left;
+    text-align: center;
     margin-top: 100px;
-    margin-left: 200px;
-    margin-right: 200px; 
+    margin-left: 20px;
+    margin-right: 20px; 
 }
 
 .home-content ul {
     list-style: none;
-   
-  }
-  
+}
 
 .home-content h1 {
     font-size: 55px;
@@ -74,4 +77,26 @@
 .home-content p {
     font-size: 16px;
     margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        margin-top: 10px;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content {
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
