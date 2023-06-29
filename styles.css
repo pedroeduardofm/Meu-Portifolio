@@ -27,6 +27,11 @@
     font-weight: 700;
 }
 
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .navbar a {
     font-size: 18px;
     color: #ffffff;
@@ -42,36 +47,30 @@
 }
 
 .home {
-    height: 100vh;
-    background: linear-gradient(-90deg, #031540 65%, #fff 35%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-90deg, #031540 65%, #fff 35%);
 }
 
 .home-image {
-    width: 500px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #031540;
-    border-radius: 50%;
-    border: 20px solid #fff;
-    outline: 20px solid #031540;
+    flex: 1;
+    text-align: center;
 }
 
 .home-image img {
-    position: relative;
-    max-width: 380px;
-    bottom: 80px;
+    max-width: 100%;
+    height: auto;
 }
 
 .home-content {
-    max-width: 600px;
+    flex: 1;
+    text-align: center;
     color: #fff;
-    text-align: right;
+    max-width: 600px;
 }
 
 .home-content h1 {
@@ -91,13 +90,11 @@
 }
 
 @keyframes animarTexto {
-
     0%,
     95%,
     100% {
         background-position: -600px 0;
     }
-
     65%,
     85% {
         background-position: 0 0;
